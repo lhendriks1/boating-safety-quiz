@@ -53,9 +53,23 @@ const STORE = [
 },
 {
   question: 'The distress and safety call channel is:',
-  answers: ['Channel 1', 'Channel 911', 'Channel 16', 'Different for each area'],
+  answers: ['Channel 1', 'Channel 911', 'Channel 16', 'It\'s different for each area'],
   correctAnswer: 'Channel 16',
-  icon: 'hhttps://www.iconsdb.com/icons/preview/white/marine-radio-xxl.png',
+  icon: 'https://www.iconsdb.com/icons/preview/white/marine-radio-xxl.png',
   altText: 'marine radio icon'
+},
+{
+  question: 'Which of the following is NOT a minimum safety equipment requirement?',
+  answers: ['One throwable type IV device', 'Fire extinguisher', 'A PFD for every person', 'Polarized sunglasses'],
+  correctAnswer: 'Polarized sunglasses',
+  icon: 'https://www.iconsdb.com/icons/preview/white/sunglasses-xxl.png',
+  altText: 'sunglasses icon'
+},
+{
+  question: 'If you are caught boating without the necessary safety equipment required by law, you may be fined: ',
+  answers: ['Up to $1,000 per citation', 'Individually for each item you are missing', 'Usually the fines will range $50-$125 depending on what/how many items you are missing (e.g. $50 per missing life jacket)', 'All of the above'],
+  correctAnswer: 'All of the above',
+  icon: 'https://www.iconsdb.com/icons/preview/white/dollar-xxl.png',
+  altText: 'money icon'
 },
 ];
