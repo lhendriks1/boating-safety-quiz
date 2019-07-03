@@ -54,13 +54,13 @@ h1 {
   display: none;
 }
 
-input[radio] {
+/* input[radio] {
 
 }
 
 fieldset {
   border: none;
-}
+} */
 
 label {
   font-size: 16px;
@@ -73,7 +73,7 @@ label {
   align-items: stretch;
 }
 
-label.row1 {
+/* label.row1 {
   background-color: rgba(59, 140, 145 ,1);
 }
 
@@ -87,17 +87,17 @@ label.row3 {
 
 label.row4 {
   background-color: #235456;
-}
+} */
 
-label.highlight {
+/* label.highlight {
   background-color: #b47b44;
   box-shadow: 0 0 20px rgba(0, 0, 0, .6);
-}
-
+} */
+/*
 label:hover, label:focus {
   background-color: #b47b44;
   box-shadow: 0 0 20px rgba(0, 0, 0, .6);
-}
+} */
 
 input[type="radio"] {
   flex: 0 0 auto;
@@ -115,8 +115,8 @@ input[type="radio"] {
   border: none;
 }
 
-.submit-button:hover, .submit-button:focus {
+/* .submit-button:hover, .submit-button:focus {
   color: rgba(15, 30, 50, 1);
   background-color: #eac77d;
   box-shadow: 0 0 20px rgba(0, 0, 0, .6);
-}
+} */
