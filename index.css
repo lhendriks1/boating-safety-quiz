@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    background-color: rgb(15, 30, 50);
+    color: white;
 }
 
 body {
@@ -7,8 +9,22 @@ body {
   font-size: 16px;
 }
 
-h1 {
-  font-size: 20px;
+header {
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+li {
+  margin-right: 20px;
+}
+
+div {
+  margin: 20px 0px;
 }
 
 
@@ -19,4 +35,18 @@ label {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
+}
+
+main {
+  margin: 20px;
+  text-align: center;
+}
+
+.logo {
+  height: 50px;
+  margin: 30px;
+}
+
+.feedback > img {
+  height: 50px;
 }
