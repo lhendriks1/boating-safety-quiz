@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Boating Safety Quiz App</title>
+    <meta name="description" content="Test your boating rules and safety knowledge">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Walter+Turncoat&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="datastore.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+  <header role="banner">
+      <img class="logo" src="https://www.iconsdb.com/icons/preview/white/anchor-2-xxl.png" alt="anchor icon"</img>
+    <ul class="stats">
+      <li>Question: 0/10</li>
+      <li>Score: 0</li>
+    </ul>
+  </header>
+  <main role="main">
+  <div class="feedback correct">
+    <img src="https://image.flaticon.com/icons/svg/609/609702.svg" alt="celebration icon">
+    <h2>Correct!</h2>
+    <p> Some feedback/additional info specific to the question goes here lorem ipsum</p>
+    <a href="feedback.html"><button type="button">Next</button></a>
+  </div>
+  <hr>
+  <div class="feedback wrong">
+    <img src="https://image.flaticon.com/icons/svg/148/148766.svg" alt="celebration icon">
+    <h2>Nope, that wasn't it</h2>
+    <p>The correct answer is: {insert key-value}.</p>
+    <p> Some feedback/additional info specific to the question goes here lorem ipsum</p>
+    <a href="results.html"><button type="button">Next</button></a>
+  </div>
+  </main>
+  </body>
