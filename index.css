@@ -8,7 +8,7 @@
   body {
     background: url('./photos-icons/boating-pic.jpeg') no-repeat fixed;
     background-size: cover;
-    background-color: rgba(1, 32, 35, .2);
+    background-color: rgba(1, 35, 35, .2);
     background-blend-mode: multiply;
     font-family: 'Roboto', sans-serif;
     text-align: center;
