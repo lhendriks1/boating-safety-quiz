@@ -77,7 +77,7 @@ function generateQuestion(){
     $('#js-score').text(score);
     $('.js-quiz-section').html(`
       <div class="feedback">
-        <img src="./photos-icons/firework-celebration.svg">
+        <img src="./photos-icons/firework-celebration.svg" alt="fireworks-celebration-icon">
         <h2>Correct!</h2>
         <p>${STORE[questionNumber].correctAnswerMsg}</p>
         <button type="button" class="next-button js-next-button">Next</button>
@@ -88,7 +88,7 @@ function generateQuestion(){
   function answeredIncorrectly() {
     $('.js-quiz-section').html(`
       <div class="feedback">
-      <img src="./photos-icons/incorrect-icon.svg" altText="incorrect \'x\' icon">
+      <img src="./photos-icons/incorrect-icon.svg" alt="incorrect \'x\' icon">
       <h2>Nope, that wasn't it</h2>
       <p>The correct answer is: "${STORE[questionNumber].correctAnswer}"</p>
       <p>${STORE[questionNumber].correctAnswerMsg}</p>
