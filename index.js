@@ -40,7 +40,7 @@ function restartQuiz() {
 function generateQuestion(){
   console.log('generateQuestion called');
   if (questionNumber < STORE.length) {
-    return `<h1>${STORE[questionNumber].question}</h1>
+    return `<h1 class="question">${STORE[questionNumber].question}</h1>
           <form id="js-quiz-form">
             <fieldset class="radio-group">
               <label class="option row1">

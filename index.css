@@ -1,6 +1,8 @@
 /*design for smartphones*/
   * {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
   }
 
   html {
@@ -18,59 +20,32 @@
     font-size: 16px;
   }
 
-  h1 {
+  h1, h2 {
     font-size: 20px;
-    padding: 0px 20px;
+  }
+
+  h1 {
+    padding: 20px 40px 10px;
   }
 
   h2 {
     font-family: 'Walter Turncoat', cursive;
-    font-size: 20px;
+    padding: 16px 0px;
   }
 
   fieldset {
     border: none;
   }
 
-  button {
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 1.5em;
-    padding: .5em 2.1em .5em 1.5em;
-    margin: 1.2em;
-    border-radius: 5px;
-    transition: all .2s ease-out;
-  }
-
-  button:hover, button:focus {
-    position:relative;
-    font-size: 1.1em;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .7);
-  }
-
-  button::after {
-    content: ">>";
-    color: #235456;
-    position: absolute;
-    right: -20px;
-    transition: .2s;
-    opacity: 0;
-  }
-
-  button:hover:after, button:focus::after {
-    opacity: 1;
-    right: 8px;
-  }
-
   label {
+    text-align: left;
     font-size: 16px;
     line-height: 24px;
     padding:8px;
-    margin: 16px;
+    margin: 16px 40px;
     box-shadow: 0 0 20px rgba(0, 0, 0, .3);
     border-radius: 5px;
     display: flex;
-    text-align: left;
     transition: all .2s ease-out;
     align-items: top;
   }
@@ -109,7 +84,6 @@
      height: 20px;
      width: 20px;
      border: 2px solid white;
-     background-color: none;
      color: #ffffff;
      border-radius: 50px;
      margin-right: 16px;
@@ -117,6 +91,9 @@
   }
 
   input:checked::before {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     position: absolute;
     font: 20px/1 'roboto', sans-serif;
     left: 3.5px;
@@ -127,20 +104,53 @@
     transform: rotate(40deg);
   }
 
+  button {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding: .5em 2.1em .5em 1.5em;
+    margin: 1.2em;
+    border-radius: 5px;
+    transition: all .2s ease-out;
+  }
+
+  button:hover, button:focus {
+    position:relative;
+    font-size: 1.1em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .7);
+  }
+
+  button::after {
+    content: ">>";
+    color: #235456;
+    position: absolute;
+    right: -20px;
+    transition: .2s;
+    opacity: 0;
+  }
+
+  button:hover:after, button:focus::after {
+    opacity: 1;
+    right: 8px;
+  }
+
   ul {
-    text-align: center;
     padding: 10px;
   }
 
   li {
     display: inline-block;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 20px 20px 20px;
   }
 
   img.logo {
     margin: 30px auto;
     max-height: 55px;
     display: block;
+  }
+
+  .question {
+    text-align: left;
   }
 
   .start-button, .restart-button {
