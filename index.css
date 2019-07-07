@@ -1,52 +1,227 @@
-* {
+/*design for smartphones*/
+  * {
     box-sizing: border-box;
-    background-color: rgb(15, 30, 50);
+  }
+
+  html {
+  background: url('./photos-icons/boating-pic.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
     color: white;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 20px;
+    padding: 0px 25px;
+  }
+
+  h2 {
+    font-family: 'Walter Turncoat', cursive;
+  }
+
+  fieldset {
+    border: none;
+  }
+
+  button {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding: .5em 2.1em .5em 1.5em;
+    margin: 1.2em;
+    border-radius: 5px;
+    transition: all .2s ease-out;
+  }
+
+  button:hover, button:focus {
+    position:relative;
+    font-size: 1.1em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .7);
+  }
+
+  button::after {
+    content: ">>";
+    color: #235456;
+    position: absolute;
+    right: -20px;
+    transition: .2s;
+    opacity: 0;
+  }
+
+  button:hover:after, button:focus::after {
+    opacity: 1;
+    right: 8px;
+  }
+
+  label {
+    font-size: 16px;
+    line-height: 24px;
+    padding:8px;
+    margin: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    display: flex;
+    text-align: left;
+    transition: all .2s ease-out;
+  }
+
+  label.row1 {
+    background-color: #067368;
+  }
+
+  label.row2 {
+    background-color: #035959;
+  }
+
+  label.row3 {
+    background-color: #035159;
+  }
+
+  label.row4 {
+    background-color: #034959;
+  }
+
+  label.highlight {
+    background-color: #b47b44;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .6);
+  }
+
+  label:hover, label:focus {
+    background-color: #b47b44;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .6);
+  }
+
+  input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+     height: 20px;
+     width: 20px;
+     border: 2px solid white;
+     border-radius: 50px;
+     margin-right: 16px;
+     flex: 0 0 auto; 
+  }
+
+  input:checked::before {
+    position: absolute;
+    font: 20px/1 'roboto', sans-serif;
+    left: 3.5px;
+    bottom: 0.5px;
+    content: '\02143';
+    transform: rotate(40deg);
+  }
+
+  ul {
+    text-align: center;
+    padding: 10px;
+  }
+
+  li {
+    display: inline-block;
+    margin: 25px;
+  }
+
+  img.logo {
+    margin: 30px auto;
+    max-height: 55px;
+    display: block;
+  }
+
+  .start-button, .restart-button {
+    color: #9F6C32;
+    background-color: white;
+    border: none;
+  }
+
+  .submit-button, .next-button {
+    color: #9F6C32;
+    background-color: #FFFFFF;
+    border: none;
+  }
+
+
+  .feedback {
+    background-color: rgba(3, 73, 89, .9);
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.5em;
+    margin: 0px 30px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+  }
+
+  .feedback > img {
+    height: 45px;
+    width: auto;
+  }
+
+  .feedback > h2 {
+    line-height: 40px;
+  }
+
+  .quiz-section {
+    display: none;
+  }
+
+
+
+@media (min-width: 640px) {
+
+  header {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  img.logo {
+    max-height: 55px;
+    display: inline-block;
+    margin: 30px;
+  }
+
+  button.start-button {
+    margin-top: 45px;
+  }
+
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-}
+@media (min-width: 1024px) {
 
-header {
-  text-align: center;
-}
+  body {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+    font-size: 18px;
+  }
 
-ul {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-}
+  div.feedback {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-li {
-  margin-right: 20px;
-}
+  h1{
+    font-size: 24px;
+  }
 
-div {
-  margin: 20px 0px;
-}
+  label {
+    font-size: 18px;
+  }
 
-
-label {
-  font-size: 16px;
-  line-height: 42px;
-  margin: 16px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-}
-
-main {
-  margin: 20px;
-  text-align: center;
-}
-
-.logo {
-  height: 50px;
-  margin: 30px;
-}
-
-.feedback > img {
-  height: 50px;
-}
+  button {
+    font-size: 18px;
+  }
