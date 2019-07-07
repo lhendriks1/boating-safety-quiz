@@ -5,15 +5,9 @@
     padding: 0px;
   }
 
-  html {
-  background: url('./photos-icons/boating-pic.jpeg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  }
-
   body {
+    background: url('./photos-icons/boating-pic.jpeg') fixed;
+    background-size: cover;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     color: white;
@@ -187,7 +181,7 @@
   }
 
 
-
+/*design for tablets*/
 @media (min-width: 768px) {
 
   header {
@@ -210,6 +204,7 @@
 
 }
 
+/*design for laptops*/
 @media (min-width: 1024px) {
 
   body {
