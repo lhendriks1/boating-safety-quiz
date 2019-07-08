@@ -19,7 +19,7 @@ function renderResults() {
     if (score < 5) {return 'Yikes - You better stick to the beaches for now...'}
       else if (score <8) {return 'Second mate status - not too shabby!'}
         else {return 'Way to go, Captain! You know your stuff!'};}
-  $('.stats').remove();
+  $('.stats').hide();
   $('.js-quiz-section').html(`
     <div class="feedback">
     <h1>Final Score:</h1>
@@ -32,7 +32,11 @@ function renderResults() {
 //--------listen for click on restart quiz button-------
 function restartQuiz() {
   $('.js-quiz-section').on('click', '.js-restart-button', function(){
-    location.reload();
+    questionNumber = 0;
+    score = 0;
+    $('.stats').show();
+    takeQuiz();
+    $('#js-q-number').text(questionNumber+1);
   });
 }
 
@@ -40,8 +44,8 @@ function restartQuiz() {
 function generateQuestion(){
   console.log('generateQuestion called');
   if (questionNumber < STORE.length) {
-    return `<p class="question">${STORE[questionNumber].question}</p>
-          <form id="js-quiz-form">
+    return `<form id="js-quiz-form">
+          <legend class="question">${STORE[questionNumber].question}</legend>
             <fieldset class="radio-group">
               <label class="option row1">
                 <input type="radio" value="${STORE[questionNumber].answers[0]}" name="answer" required><span>${STORE[questionNumber].answers[0]}</span>
