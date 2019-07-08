@@ -104,7 +104,6 @@ function generateQuestion(){
   function goToNextQuestion(){
     $('.js-quiz-section').on('click', '.js-next-button', function(){
       incrementQuestion();
-      generateQuestion();
       renderQuestion();
       $('#js-q-number').text(questionNumber+1)
       handleUserAnswers();
