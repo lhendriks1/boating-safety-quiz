@@ -19,8 +19,8 @@ const STORE = [
 },
 {
   question: 'The pecking order of right of way between vessels is:',
-  answers: ['Fishing boats → Sail boats → Power boats', 'Sail Boats → Fishing boats → Power boats', 'Power boats → Fishing boats → Sail boats', 'None of those'],
-  correctAnswer: 'Fishing boats → Sail boats → Power boats',
+  answers: ['Commercial fishing boats → Sail boats → Power boats', 'Sail Boats → Commercial fishing boats → Power boats', 'Power boats → Commercial fishing boats → Sail boats', 'None of those'],
+  correctAnswer: 'Commercial fishing boats → Sail boats → Power boats',
   correctAnswerMsg: 'The most maneuverable vessel gives way. However, responsibility for avoiding collisions is shared by everyone using the waterway.',
 },
 {
