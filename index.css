@@ -5,6 +5,10 @@
     padding: 0px;
   }
 
+html {
+ height: 100vh;
+}
+
   body {
     background: url('./photos-icons/boating-pic.jpeg');
     background-position: center center;
